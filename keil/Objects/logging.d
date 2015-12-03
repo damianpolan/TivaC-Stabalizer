@@ -1,0 +1,10 @@
+.\objects\logging.o: logging.c
+.\objects\logging.o: logging.h
+.\objects\logging.o: C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123\CU_TM4C123.h
+.\objects\logging.o: C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123\CU_TM4C123GH6PM.h
+.\objects\logging.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm4.h
+.\objects\logging.o: C:\Keil_v5\ARM\ARMCC\bin\..\include\stdint.h
+.\objects\logging.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmInstr.h
+.\objects\logging.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cmFunc.h
+.\objects\logging.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.1.1\CMSIS\Include\core_cm4_simd.h
+.\objects\logging.o: C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123\CU_system_TM4C123.h

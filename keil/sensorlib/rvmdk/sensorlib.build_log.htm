@@ -1,0 +1,144 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: damian Damian, asd, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\ti\TivaWare_C_Series-2.1.1.71\sensorlib\sensorlib.uvprojx
+Project File Date:  11/25/2015
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'sensorlib'
+compiling ak8975.c...
+ak8975.c(498): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          *pfMagnetoX = ((float)(int16_t)((psInst->pui8Data[2] << 8) |
+ak8975.c(504): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          *pfMagnetoY = ((float)(int16_t)((psInst->pui8Data[4] << 8) |
+ak8975.c(510): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          *pfMagnetoZ = ((float)(int16_t)((psInst->pui8Data[6] << 8) |
+ak8975.c: 3 warnings, 0 errors
+compiling ak8963.c...
+compiling bmp180.c...
+compiling cm3218.c...
+compiling bq27510g3.c...
+compiling comp_dcm.c...
+comp_dcm.c(391): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+comp_dcm.c(394): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+comp_dcm.c: 2 warnings, 0 errors
+compiling isl29023.c...
+compiling kxti9.c...
+compiling i2cm_drv.c...
+compiling l3gd20h.c...
+compiling lsm303d.c...
+compiling lsm303dlhc_mag.c...
+compiling lsm303dlhc_accel.c...
+compiling magneto.c...
+compiling mpu6050.c...
+compiling mpu9150.c...
+mpu9150.c(1161): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          *pfMagnetoX *= 
+ONVERT_TO_TESLA;
+mpu9150.c(1166): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          *pfMagnetoY *= 
+ONVERT_TO_TESLA;
+mpu9150.c(1171): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+          *pfMagnetoZ *= 
+ONVERT_TO_TESLA;
+mpu9150.c: 3 warnings, 0 errors
+compiling quaternion.c...
+quaternion.c(70): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fRoll = fRollDeg * 
+_PI / 180.0;
+quaternion.c(71): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fPitch = fPitchDeg *  
+_PI / 180.0;
+quaternion.c(72): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fYaw = fYawDeg * 
+_PI / 180.0;
+quaternion.c(77): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fCOSY = cosf(fYaw / 2.0);
+quaternion.c(78): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fCOSP = cosf(fPitch / 2.0);
+quaternion.c(79): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fCOSR = cosf(fRoll / 2.0);
+quaternion.c(84): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fSINY = sinf(fYaw / 2.0);
+quaternion.c(85): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fSINP = sinf(fPitch / 2.0);
+quaternion.c(86): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fSINR = sinf(fRoll / 2.0);
+quaternion.c(278): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      return(acosf(pfQProd[
+_W]) * 2.0);
+quaternion.c: 10 warnings, 0 errors
+compiling sht21.c...
+sht21.c(493): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      *pfTemperature = -46.85 + 175.72 * (*pfTemperature / 65536.0);
+sht21.c(551): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      *pfHumidity = -6.0 + 125.0 * (*pfHumidity / 65536.0);
+sht21.c(556): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      *pfHumidity /= 100.0;
+sht21.c: 3 warnings, 0 errors
+compiling tmp006.c...
+tmp006.c(564): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      *pfAmbient = *pfAmbient / 32.0;
+tmp006.c(569): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fTdie2 = *pfAmbient + 
+_REF;
+tmp006.c(574): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fS = psInst->fCalibrationFactor * (1.0f + (
+tmp006.c(580): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fVo = 
+tmp006.c(587): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fVx = (((float) i16Object) * 156.25e-9) - fVo;
+tmp006.c(592): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      fObj = fVx + 
+tmp006.c(597): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      *pfObject = (sqrtf(sqrtf((fTdie2 * fTdie2 * fTdie2 * fTdie2) +
+tmp006.c: 7 warnings, 0 errors
+compiling vector.c...
+compiling tmp100.c...
+tmp100.c(573): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      *pfTemperature = ((float)(((int16_t)psInst->pui8Data[0] << 8) |
+tmp100.c: 1 warning, 0 errors
+creating Library...
+".\rvmdk\sensorlib.lib" - 0 Error(s), 29 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\ti\TivaWare_C_Series-2.1.1.71\sensorlib\RTE
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
