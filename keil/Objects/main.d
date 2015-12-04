@@ -22,3 +22,6 @@
 .\objects\main.o: inc/hw_memmap.h
 .\objects\main.o: utils/uartstdio.h
 .\objects\main.o: driverlib/fpu.h
+.\objects\main.o: padcontroller.h
+.\objects\main.o: inc/hw_gpio.h
+.\objects\main.o: driverlib/pwm.h

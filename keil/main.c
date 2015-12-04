@@ -1,5 +1,6 @@
 #include "sensorinit.h"
 #include "utils/uartstdio.h"
+#include "padcontroller.h"
 //#include "UART_log.h"
 
 void
@@ -19,7 +20,8 @@ int main(void) {
 	InitConsole();
 		
 	
-	initSensors();
+	//initSensors();
+	init_padController();
 	
 	return 0;
 }

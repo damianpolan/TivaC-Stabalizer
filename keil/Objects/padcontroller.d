@@ -1,2 +1,12 @@
 .\objects\padcontroller.o: padcontroller.c
 .\objects\padcontroller.o: padcontroller.h
+.\objects\padcontroller.o: driverlib/pin_map.h
+.\objects\padcontroller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\padcontroller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\padcontroller.o: inc/hw_gpio.h
+.\objects\padcontroller.o: inc/hw_types.h
+.\objects\padcontroller.o: inc/hw_memmap.h
+.\objects\padcontroller.o: driverlib/sysctl.h
+.\objects\padcontroller.o: driverlib/gpio.h
+.\objects\padcontroller.o: driverlib/pwm.h
+.\objects\padcontroller.o: delays.h
