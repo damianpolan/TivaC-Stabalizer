@@ -3,9 +3,13 @@
 .\objects\sensorinit.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\sensorinit.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\sensorinit.o: inc/tm4c123gh6pm.h
-.\objects\sensorinit.o: sensorlib/hw_lsm303dlhc.h
 .\objects\sensorinit.o: sensorlib/i2cm_drv.h
+.\objects\sensorinit.o: sensorlib/hw_lsm303dlhc.h
 .\objects\sensorinit.o: sensorlib/lsm303dlhc_accel.h
+.\objects\sensorinit.o: sensorlib/l3gd20h.h
+.\objects\sensorinit.o: sensorlib/hw_l3gd20h.h
+.\objects\sensorinit.o: sensorlib/lsm303d.h
+.\objects\sensorinit.o: sensorlib/hw_lsm303d.h
 .\objects\sensorinit.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\sensorinit.o: delays.h
 .\objects\sensorinit.o: inc/hw_i2c.h
@@ -16,3 +20,5 @@
 .\objects\sensorinit.o: driverlib/sysctl.h
 .\objects\sensorinit.o: driverlib/uart.h
 .\objects\sensorinit.o: inc/hw_memmap.h
+.\objects\sensorinit.o: utils/uartstdio.h
+.\objects\sensorinit.o: driverlib/fpu.h

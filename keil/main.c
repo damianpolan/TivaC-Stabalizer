@@ -18,6 +18,7 @@ InitConsole(void)
 int main(void) {
 	InitConsole();
 		
+	
 	initSensors();
 	
 	return 0;

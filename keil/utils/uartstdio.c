@@ -500,7 +500,7 @@ UARTwrite(const char *pcBuf, unsigned long ulLen)
 {
 #ifdef UART_BUFFERED
     unsigned int uIdx;
-
+			
     //
     // Check for valid arguments.
     //
@@ -919,23 +919,23 @@ UARTgetc(void)
 //! \return None.
 //
 //*****************************************************************************
-char buf[256];
+char buf[128];
 void UARTprintf(const char* format, ...)
-{
-		int i;
+{	
 		
-		for(i = 0; i < 256; i++) {
-			buf[i] = 0;
-		}
-	
+		
 	  int32_t len;
     va_list argptr;
     va_start(argptr, format);
-	      len = vsnprintf(buf, 256, format, argptr);
+	  len = vsnprintf(buf, 128, format, argptr);
     va_end(argptr);
+		
 	
+		if(len < 0) {
+			UARTwrite("UARTprintf Error", 16);
+		}
 	  if (len > 0)
-		    UARTwrite(buf, len);
+			UARTwrite(buf, len);
 }
 
 #if 0
