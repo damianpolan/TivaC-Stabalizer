@@ -16,3 +16,4 @@
 .\objects\main.o: driverlib/sysctl.h
 .\objects\main.o: driverlib/uart.h
 .\objects\main.o: inc/hw_memmap.h
+.\objects\main.o: utils/uartstdio.h

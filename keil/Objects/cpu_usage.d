@@ -2,6 +2,10 @@
 .\objects\cpu_usage.o: .\inc/hw_memmap.h
 .\objects\cpu_usage.o: .\inc/hw_types.h
 .\objects\cpu_usage.o: .\driverlib/debug.h
+.\objects\cpu_usage.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\cpu_usage.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\cpu_usage.o: .\driverlib/rom.h
 .\objects\cpu_usage.o: .\driverlib/rom_map.h
 .\objects\cpu_usage.o: .\driverlib/sysctl.h
+.\objects\cpu_usage.o: .\driverlib/timer.h
+.\objects\cpu_usage.o: .\utils/cpu_usage.h

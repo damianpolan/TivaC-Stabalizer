@@ -25,6 +25,9 @@
 #ifndef __FLASH_PB_H__
 #define __FLASH_PB_H__
 
+#include <stdint.h>
+#include <stdbool.h>
+
 //*****************************************************************************
 //
 // If building with a C++ compiler, make all of the definitions in this header

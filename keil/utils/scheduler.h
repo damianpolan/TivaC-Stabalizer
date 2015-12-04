@@ -24,6 +24,9 @@
 #ifndef __SCHEDULER_H__
 #define __SCHEDULER_H__
 
+#include <stdint.h>
+#include <stdbool.h>
+
 //*****************************************************************************
 //
 // If building with a C++ compiler, make all of the definitions in this header

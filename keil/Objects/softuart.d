@@ -6,4 +6,11 @@
 .\objects\softuart.o: .\inc/hw_types.h
 .\objects\softuart.o: .\inc/hw_uart.h
 .\objects\softuart.o: .\driverlib/debug.h
+.\objects\softuart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\softuart.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\softuart.o: .\driverlib/gpio.h
+.\objects\softuart.o: .\driverlib/interrupt.h
+.\objects\softuart.o: .\driverlib/rom.h
+.\objects\softuart.o: .\driverlib/rom_map.h
+.\objects\softuart.o: .\driverlib/uart.h
+.\objects\softuart.o: .\utils/softuart.h

@@ -3,6 +3,7 @@
 ".\objects\delays.o"
 ".\objects\padcontroller.o"
 ".\objects\sensorinit.o"
+".\objects\uartstdio.o"
 ".\objects\adc.o"
 ".\objects\aes.o"
 ".\objects\can.o"

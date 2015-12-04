@@ -25,6 +25,9 @@
 #ifndef __SINE_H__
 #define __SINE_H__
 
+#include <stdint.h>
+#include <stdbool.h>
+
 //*****************************************************************************
 //
 // If building with a C++ compiler, make all of the definitions in this header

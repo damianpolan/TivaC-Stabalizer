@@ -23,6 +23,7 @@
 //*****************************************************************************
 
 #include <stdarg.h>
+#include <stdio.h>
 #include "inc/hw_ints.h"
 #include "inc/hw_memmap.h"
 #include "inc/hw_types.h"
@@ -918,6 +919,26 @@ UARTgetc(void)
 //! \return None.
 //
 //*****************************************************************************
+char buf[256];
+void UARTprintf(const char* format, ...)
+{
+		int i;
+		
+		for(i = 0; i < 256; i++) {
+			buf[i] = 0;
+		}
+	
+	  int32_t len;
+    va_list argptr;
+    va_start(argptr, format);
+	      len = vsnprintf(buf, 256, format, argptr);
+    va_end(argptr);
+	
+	  if (len > 0)
+		    UARTwrite(buf, len);
+}
+
+#if 0
 void
 UARTprintf(const char *pcString, ...)
 {
@@ -1319,6 +1340,7 @@ convert:
     //
     va_end(vaArgP);
 }
+#endif
 
 //*****************************************************************************
 //

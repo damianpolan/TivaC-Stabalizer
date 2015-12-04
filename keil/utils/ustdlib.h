@@ -26,6 +26,8 @@
 #define __USTDLIB_H__
 
 #include <stdarg.h>
+#include <stdint.h>
+#include <stdbool.h>
 
 //*****************************************************************************
 //

@@ -25,6 +25,9 @@
 #ifndef __RINGBUF_H__
 #define __RINGBUF_H__
 
+#include <stdint.h>
+#include <stdbool.h>
+
 //*****************************************************************************
 //
 // If building with a C++ compiler, make all of the definitions in this header

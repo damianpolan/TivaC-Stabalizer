@@ -25,6 +25,9 @@
 #ifndef __SOFTUART_H__
 #define __SOFTUART_H__
 
+#include <stdint.h>
+#include <stdbool.h>
+
 //*****************************************************************************
 //
 // If building with a C++ compiler, make all of the definitions in this header
