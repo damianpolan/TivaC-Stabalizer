@@ -174,7 +174,6 @@ void initAccel2(void) {
 	0);
 	while(!defaultDone) {}
 		
-		
 	//configure no high pass filter
 	defaultDone = false;
 	LSM303DReadModifyWrite(&accelerometer2, LSM303DLHC_O_CTRL2,
@@ -299,8 +298,8 @@ void initSensors(void) {
 	volatile int success = 0;
 	
 	
-   FPULazyStackingEnable();
-	 SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ |
+  FPULazyStackingEnable();
+	SysCtlClockSet(SYSCTL_SYSDIV_2_5 | SYSCTL_USE_PLL | SYSCTL_XTAL_16MHZ |
                        SYSCTL_OSC_MAIN);
 	//initialze I2C and GPIO ports
 	InitI2C0();

@@ -1,9 +1,8 @@
 --cpu Cortex-M4.fp
-".\objects\main.o"
 ".\objects\delays.o"
 ".\objects\padcontroller.o"
-".\objects\sensorinit.o"
 ".\objects\uartstdio.o"
+".\objects\main.o"
 ".\objects\adc.o"
 ".\objects\aes.o"
 ".\objects\can.o"
@@ -57,6 +56,9 @@
 ".\objects\tmp006.o"
 ".\objects\tmp100.o"
 ".\objects\vector.o"
+".\objects\adafruit_10dof.o"
+".\objects\adafruit_simple_ahrs.o"
+".\objects\sensor_lsm303.o"
 ".\objects\startup_tm4c123.o"
 ".\objects\system_tm4c123.o"
 --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
