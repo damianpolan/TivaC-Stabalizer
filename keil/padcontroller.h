@@ -12,6 +12,7 @@
 #include "driverlib/gpio.h"
 #include "driverlib/pwm.h"
 #include "delays.h"
+#include <math.h>
 
 void init_padController(void);
 void setTarget_X1(int percent);

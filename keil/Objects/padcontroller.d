@@ -10,3 +10,4 @@
 .\objects\padcontroller.o: driverlib/gpio.h
 .\objects\padcontroller.o: driverlib/pwm.h
 .\objects\padcontroller.o: delays.h
+.\objects\padcontroller.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

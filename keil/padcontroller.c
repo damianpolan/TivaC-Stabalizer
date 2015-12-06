@@ -59,6 +59,11 @@ void initPWMs() {
 //sets the target for servo x1.
 // param percent: Value between 0 and 100. 0 -> arm retracted, 100 -> arm extended
 void setTarget_X1(int percent) {
+	if(percent > 100)
+		percent = 100;
+	if(percent < 0)
+		percent = 0;
+	
 	float value = SERVO_X1_RETRACTED - (((SERVO_X1_RETRACTED) - (SERVO_X1_EXTENDED)) * (percent / 100.0f));	 
   PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, value);
 }
@@ -66,6 +71,11 @@ void setTarget_X1(int percent) {
 //sets the target for servo x2.
 // param percent: Value between 0 and 100. 0 -> arm retracted, 100 -> arm extended
 void setTarget_X2(int percent) {
+	if(percent > 100)
+		percent = 100;
+	if(percent < 0)
+		percent = 0;
+	
 	float value = SERVO_X2_RETRACTED + (((SERVO_X2_EXTENDED) - (SERVO_X2_RETRACTED)) * (percent / 100.0f));
 	PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, value);
 }
@@ -73,21 +83,21 @@ void setTarget_X2(int percent) {
 void init_padController() {
 	initPWMs();
 	
-	while(1)
-	{
-		setTarget_X1(50);
-		
-		setTarget_X2(50);
-    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6,SERVO_X1_RETRACTED);
-		
-    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7,SERVO_X2_RETRACTED);
-		cycles(10000000);
-		
-		setTarget_X2(100);
-    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6,SERVO_X1_MIN);
-    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7,SERVO_X2_EXTENDED);
-    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6,SERVO_X1_EXTENDED);
-		cycles(10000000);
-		
-	}
+//	while(1)
+//	{
+//		setTarget_X1(50);
+//		
+//		setTarget_X2(50);
+//    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6,SERVO_X1_RETRACTED);
+//		
+//    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7,SERVO_X2_RETRACTED);
+//		cycles(10000000);
+//		
+//		setTarget_X2(100);
+//    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6,SERVO_X1_MIN);
+//    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7,SERVO_X2_EXTENDED);
+//    //PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6,SERVO_X1_EXTENDED);
+//		cycles(10000000);
+//		
+//	}
 }

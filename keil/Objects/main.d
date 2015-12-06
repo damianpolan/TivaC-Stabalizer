@@ -11,8 +11,8 @@
 .\objects\main.o: driverlib/gpio.h
 .\objects\main.o: driverlib/pwm.h
 .\objects\main.o: delays.h
-.\objects\main.o: adafruit/Adafruit_Simple_AHRS.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\main.o: adafruit/Adafruit_Simple_AHRS.h
 .\objects\main.o: ..\keil\adafruit/Adafruit_Sensor.h
 .\objects\main.o: ..\keil\adafruit/Adafruit_Sensor_Set.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
@@ -20,10 +20,6 @@
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 .\objects\main.o: inc/tm4c123gh6pm.h
 .\objects\main.o: sensorlib/i2cm_drv.h
-.\objects\main.o: sensorlib/hw_lsm303dlhc.h
-.\objects\main.o: sensorlib/lsm303dlhc_accel.h
-.\objects\main.o: sensorlib/l3gd20h.h
-.\objects\main.o: sensorlib/hw_l3gd20h.h
 .\objects\main.o: sensorlib/lsm303d.h
 .\objects\main.o: sensorlib/hw_lsm303d.h
 .\objects\main.o: inc/hw_i2c.h

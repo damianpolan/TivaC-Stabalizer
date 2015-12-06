@@ -1,0 +1,7 @@
+--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.
+-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE
+-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123
+-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123
+-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM
+-o .\objects\adafruit_simple_ahrs.o --omf_browse .\objects\adafruit_simple_ahrs.crf --depend .\objects\adafruit_simple_ahrs.d "adafruit\Adafruit_Simple_AHRS.cpp"

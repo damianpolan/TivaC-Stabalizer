@@ -28,61 +28,87 @@ void Sensor_LSM303_Accel::init(void) {
 	success = LSM303DInit(&_accelerometer, _masterDriver, 0x19, defaultCallback_accel, this); //0x19 is the default I2C address of the LSM303DLHC device
 	while(!_defaultDone) {}
 	
+		
+	//
+	_defaultDone = false;
+	LSM303DReadModifyWrite(&_accelerometer, LSM303D_O_CTRL0,
+	~0xFF,
+	0x00,
+	defaultCallback_accel,
+	this);
+	while(!_defaultDone) {}
+		
 	//enable the accelerometer for 100HZ
 	_defaultDone = false;
-	LSM303DReadModifyWrite(&_accelerometer, LSM303DLHC_O_CTRL1,
+	LSM303DReadModifyWrite(&_accelerometer, LSM303D_O_CTRL1,
 	~0xFF,
-	0x07 | LSM303DLHC_CTRL1_ODR_100HZ, //0x57
+	0x67,
 	defaultCallback_accel,
 	this);
 	while(!_defaultDone) {}
 		
-	//configure no high pass filter
+		
 	_defaultDone = false;
-	LSM303DReadModifyWrite(&_accelerometer, LSM303DLHC_O_CTRL2,
+	LSM303DReadModifyWrite(&_accelerometer, LSM303D_O_CTRL2,
 	~0xFF,
-	0x00, 
+	0x00,
+	defaultCallback_accel,
+	this);
+	while(!_defaultDone) {}
+		
+		
+	_defaultDone = false;
+	LSM303DReadModifyWrite(&_accelerometer, LSM303D_O_CTRL3,
+	~0xFF,
+	0x00,
 	defaultCallback_accel,
 	this);
 	while(!_defaultDone) {}
 	
-	// disable pin interrupts
+		
 	_defaultDone = false;
-	LSM303DReadModifyWrite(&_accelerometer, LSM303DLHC_O_CTRL3,
+	LSM303DReadModifyWrite(&_accelerometer, LSM303D_O_CTRL4,
 	~0xFF,
-	0x00, 
+	0x00,
 	defaultCallback_accel,
 	this);
-	while(!_defaultDone) {}	
+	while(!_defaultDone) {}
 		
-	// continuous update, +/- 2G, high-res disabled
+		
 	_defaultDone = false;
-	LSM303DReadModifyWrite(&_accelerometer, LSM303DLHC_O_CTRL4,
-	~0xFF,
-	0x00, 
+	LSM303DReadModifyWrite(&_accelerometer, LSM303D_O_CTRL5,
+	~LSM303D_CTRL5_MODR_M,
+	LSM303D_CTRL5_MODR_100HZ | 0x80, //for some reason the 0x80 makes the accel readings normal
 	defaultCallback_accel,
 	this);
-	while(!_defaultDone) {}	
+	while(!_defaultDone) {}
 		
-	// normal mode, FIFO disable, no latch interrupt, 4D disable
 	_defaultDone = false;
-	LSM303DReadModifyWrite(&_accelerometer, LSM303DLHC_O_CTRL5,
+	LSM303DReadModifyWrite(&_accelerometer, LSM303D_O_CTRL6,
 	~0xFF,
-	0x00 | LSM303DLHC_CTRL5_REBOOTCTL_REBOOT, 
+	0x00,
 	defaultCallback_accel,
 	this);
-	while(!_defaultDone) {}	
+	while(!_defaultDone) {}
 		
-	// no interrupt, reboot on PAD2
+		
 	_defaultDone = false;
-	LSM303DReadModifyWrite(&_accelerometer, LSM303DLHC_O_CTRL6,
+	LSM303DReadModifyWrite(&_accelerometer, LSM303D_O_CTRL7,
 	~0xFF,
-	0x00 | LSM303DLHC_CTRL6_BOOT_I2_EN, 
+	LSM303D_CTRL7_MD_CONTINUOUS,
 	defaultCallback_accel,
 	this);
-	while(!_defaultDone) {}	
+	while(!_defaultDone) {}
 		
-	
+		
+	_defaultDone = false;
+	LSM303DReadModifyWrite(&_accelerometer, 0x02,
+	~0xFF,
+	0x00,
+	defaultCallback_accel,
+	this);
+	while(!_defaultDone) {}
+		
 }
 
 void Sensor_LSM303_Accel::doRead(void) {
@@ -94,8 +120,8 @@ void Sensor_LSM303_Accel::doRead(void) {
 	LSM303DDataAccelGetFloat(&_accelerometer, &lastRead_accel[0], &lastRead_accel[1], &lastRead_accel[2]);
 	LSM303DDataMagnetoGetFloat(&_accelerometer, &lastRead_mag[0], &lastRead_mag[1], &lastRead_mag[2]);
 		
-	UARTprintf("Read Accel: %f, %f, %f\n", lastRead_accel[0], lastRead_accel[1], lastRead_accel[2]);
-	UARTprintf("Read Mag: %f, %f, %f\n", lastRead_mag[0], lastRead_mag[1], lastRead_mag[2]);
+	//UARTprintf("Read Accel:  %f, %f, %f\n", lastRead_accel[0], lastRead_accel[1], lastRead_accel[2]);
+	//UARTprintf("Read Mag:    %f, %f, %f\n\n", lastRead_mag[0], lastRead_mag[1], lastRead_mag[2]);
 }
 
 

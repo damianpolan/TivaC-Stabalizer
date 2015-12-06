@@ -4,10 +4,6 @@
 .\objects\sensor_lsm303.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\sensor_lsm303.o: inc/tm4c123gh6pm.h
 .\objects\sensor_lsm303.o: sensorlib/i2cm_drv.h
-.\objects\sensor_lsm303.o: sensorlib/hw_lsm303dlhc.h
-.\objects\sensor_lsm303.o: sensorlib/lsm303dlhc_accel.h
-.\objects\sensor_lsm303.o: sensorlib/l3gd20h.h
-.\objects\sensor_lsm303.o: sensorlib/hw_l3gd20h.h
 .\objects\sensor_lsm303.o: sensorlib/lsm303d.h
 .\objects\sensor_lsm303.o: sensorlib/hw_lsm303d.h
 .\objects\sensor_lsm303.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

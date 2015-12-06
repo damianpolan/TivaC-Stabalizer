@@ -10,10 +10,10 @@ extern "C" {
 #include "sensorlib/i2cm_drv.h"
 
 //sensor provided
-#include "sensorlib/hw_lsm303dlhc.h"
-#include "sensorlib/lsm303dlhc_accel.h"
-#include "sensorlib/l3gd20h.h"
-#include "sensorlib/hw_l3gd20h.h"
+//#include "sensorlib/hw_lsm303dlhc.h"
+//#include "sensorlib/lsm303dlhc_accel.h"
+//#include "sensorlib/l3gd20h.h"
+//#include "sensorlib/hw_l3gd20h.h"
 
 #include "sensorlib/lsm303d.h"
 #include "sensorlib/hw_lsm303d.h"

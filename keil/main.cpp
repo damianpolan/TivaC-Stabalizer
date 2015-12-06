@@ -104,7 +104,10 @@ int main(void) {
 	
 	//Adafruit_Simple_AHRS ahrs(&accel, &mag);
 	//initSensors();
-	//init_padController();
+	init_padController();
+	
+	int currPerc_X1 = 50;
+	int currPerc_X2 = 50;
 	
 	int count = 0;
 	while(count < 15) {
@@ -113,7 +116,20 @@ int main(void) {
 		sensors_event_t s;
 		accel->getEvent(&s);
 		
-		cycles(10000000);
+		float x = accel->lastRead_accel[0];
+		float y = accel->lastRead_accel[1];
+		float z = accel->lastRead_accel[2];
+		UARTprintf("Read Accel:  %f, %f, %f\n", x, y, z);
+	
+		currPerc_X1 += (int) -y;
+		currPerc_X2 += (int) x;
+		
+		setTarget_X1(currPerc_X1);
+		setTarget_X2(currPerc_X2);
+	
+		
+		
+		cycles(100000);
 	}
 	
 	
