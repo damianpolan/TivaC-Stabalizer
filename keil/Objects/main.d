@@ -1,4 +1,5 @@
 .\objects\main.o: main.cpp
+.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\main.o: utils/uartstdio.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
@@ -11,7 +12,6 @@
 .\objects\main.o: driverlib/gpio.h
 .\objects\main.o: driverlib/pwm.h
 .\objects\main.o: delays.h
-.\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\main.o: adafruit/Adafruit_Simple_AHRS.h
 .\objects\main.o: ..\keil\adafruit/Adafruit_Sensor.h
 .\objects\main.o: ..\keil\adafruit/Adafruit_Sensor_Set.h
@@ -27,3 +27,6 @@
 .\objects\main.o: driverlib/uart.h
 .\objects\main.o: driverlib/fpu.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\main.o: Sensor_L3GD20H.h
+.\objects\main.o: sensorlib/l3gd20h.h
+.\objects\main.o: sensorlib/hw_l3gd20h.h

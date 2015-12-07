@@ -58,7 +58,7 @@ void initPWMs() {
 
 //sets the target for servo x1.
 // param percent: Value between 0 and 100. 0 -> arm retracted, 100 -> arm extended
-void setTarget_X1(int percent) {
+float setTarget_X1(float percent) {
 	if(percent > 100)
 		percent = 100;
 	if(percent < 0)
@@ -66,11 +66,13 @@ void setTarget_X1(int percent) {
 	
 	float value = SERVO_X1_RETRACTED - (((SERVO_X1_RETRACTED) - (SERVO_X1_EXTENDED)) * (percent / 100.0f));	 
   PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, value);
+	
+	return percent;
 }
 
 //sets the target for servo x2.
 // param percent: Value between 0 and 100. 0 -> arm retracted, 100 -> arm extended
-void setTarget_X2(int percent) {
+float setTarget_X2(float percent) {
 	if(percent > 100)
 		percent = 100;
 	if(percent < 0)
@@ -78,6 +80,8 @@ void setTarget_X2(int percent) {
 	
 	float value = SERVO_X2_RETRACTED + (((SERVO_X2_EXTENDED) - (SERVO_X2_RETRACTED)) * (percent / 100.0f));
 	PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, value);
+	
+	return percent;
 }
 
 void init_padController() {

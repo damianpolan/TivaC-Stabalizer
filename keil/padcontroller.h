@@ -15,8 +15,8 @@
 #include <math.h>
 
 void init_padController(void);
-void setTarget_X1(int percent);
-void setTarget_X2(int percent);
+float setTarget_X1(float percent);
+float setTarget_X2(float percent);
 
 #endif
 

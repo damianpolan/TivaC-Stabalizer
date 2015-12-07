@@ -2,8 +2,8 @@ Dependencies for Project 'lab5', Target 'Target 1': (DO NOT MODIFY !)
 F (.\UART_log.c)(0x5660B9DE)()
 F (.\delays.c)(0x5660B9DE)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\keil -I.\sensorlib -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\delays.o --omf_browse .\objects\delays.crf --depend .\objects\delays.d)
 I (delays.h)(0x5660B9DE)
-F (.\padcontroller.c)(0x56638853)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\keil -I.\sensorlib -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\padcontroller.o --omf_browse .\objects\padcontroller.crf --depend .\objects\padcontroller.d)
-I (padcontroller.h)(0x566387AE)
+F (.\padcontroller.c)(0x56649D2F)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\keil -I.\sensorlib -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\padcontroller.o --omf_browse .\objects\padcontroller.crf --depend .\objects\padcontroller.d)
+I (padcontroller.h)(0x56649D1B)
 I (driverlib/pin_map.h)(0x5660B9DE)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DBD436)
@@ -15,7 +15,7 @@ I (driverlib/gpio.h)(0x5660B9DE)
 I (driverlib/pwm.h)(0x5660B9DE)
 I (delays.h)(0x5660B9DE)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x55DBD43E)
-F (.\sensorinit.c)(0x56636801)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\keil -I.\sensorlib -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\sensorinit.o --omf_browse .\objects\sensorinit.crf --depend .\objects\sensorinit.d)
+F (.\sensorinit.c)(0x56649DD1)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\keil -I.\sensorlib -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\sensorinit.o --omf_browse .\objects\sensorinit.crf --depend .\objects\sensorinit.d)
 I (sensorinit.h)(0x56620F39)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55DBD43E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)
@@ -55,11 +55,12 @@ I (..\keil\driverlib/rom_map.h)(0x5660B9DE)
 I (..\keil\driverlib/sysctl.h)(0x5660B9DF)
 I (..\keil\driverlib/uart.h)(0x5660B9DF)
 I (..\keil\utils/uartstdio.h)(0x5660D159)
-F (.\main.cpp)(0x5663889E)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\keil -I.\sensorlib -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\main.cpp)(0x5664FD8D)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I..\keil -I.\sensorlib -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x55DBD43E)
 I (utils/uartstdio.h)(0x5660D159)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DBD436)
-I (padcontroller.h)(0x566387AE)
+I (padcontroller.h)(0x56649D1B)
 I (driverlib/pin_map.h)(0x5660B9DE)
 I (inc/hw_gpio.h)(0x5660B9DF)
 I (inc/hw_types.h)(0x5660B9DF)
@@ -68,12 +69,11 @@ I (driverlib/sysctl.h)(0x5660B9DF)
 I (driverlib/gpio.h)(0x5660B9DE)
 I (driverlib/pwm.h)(0x5660B9DE)
 I (delays.h)(0x5660B9DE)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x55DBD43E)
 I (adafruit/Adafruit_Simple_AHRS.h)(0x56635877)
 I (..\keil\adafruit/Adafruit_Sensor.h)(0x56635868)
 I (..\keil\adafruit/Adafruit_Sensor_Set.h)(0x56635191)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x55DBD43E)
-I (Sensor_LSM303.h)(0x566380A4)
+I (Sensor_LSM303.h)(0x56649F96)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55DBD43E)
 I (inc/tm4c123gh6pm.h)(0x5660B9E0)
 I (sensorlib/i2cm_drv.h)(0x56620A65)
@@ -84,6 +84,9 @@ I (driverlib/i2c.h)(0x5660B9DE)
 I (driverlib/uart.h)(0x5660B9DF)
 I (driverlib/fpu.h)(0x5660B9DE)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DBD438)
+I (Sensor_L3GD20H.h)(0x5664A22B)
+I (sensorlib/l3gd20h.h)(0x5660B9E0)
+I (sensorlib/hw_l3gd20h.h)(0x5660B9E0)
 F (.\driverlib\adc.c)(0x5660B9DE)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DBD436)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)
@@ -465,7 +468,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)
 I (.\sensorlib/hw_kxti9.h)(0x5660B9E0)
 I (.\sensorlib/i2cm_drv.h)(0x56620A65)
 I (.\sensorlib/kxti9.h)(0x5660B9E0)
-F (.\sensorlib\l3gd20h.c)(0x5661E5AD)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\l3gd20h.o --omf_browse .\objects\l3gd20h.crf --depend .\objects\l3gd20h.d)
+F (.\sensorlib\l3gd20h.c)(0x5664A206)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\l3gd20h.o --omf_browse .\objects\l3gd20h.crf --depend .\objects\l3gd20h.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)
 I (.\sensorlib/hw_l3gd20h.h)(0x5660B9E0)
 I (.\sensorlib/i2cm_drv.h)(0x56620A65)
@@ -522,8 +525,8 @@ I (.\sensorlib/i2cm_drv.h)(0x56620A65)
 I (.\sensorlib/tmp100.h)(0x5660B9E1)
 F (.\sensorlib\vector.c)(0x5660B9E1)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\vector.o --omf_browse .\objects\vector.crf --depend .\objects\vector.d)
 I (.\sensorlib/vector.h)(0x5660B9E1)
-F (.\Sensor_LSM303.cpp)(0x5663858F)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\sensor_lsm303.o --omf_browse .\objects\sensor_lsm303.crf --depend .\objects\sensor_lsm303.d)
-I (Sensor_LSM303.h)(0x566380A4)
+F (.\Sensor_LSM303.cpp)(0x5664C083)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\sensor_lsm303.o --omf_browse .\objects\sensor_lsm303.crf --depend .\objects\sensor_lsm303.d)
+I (Sensor_LSM303.h)(0x56649F96)
 I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55DBD43E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)
 I (inc/tm4c123gh6pm.h)(0x5660B9E0)
@@ -544,6 +547,27 @@ I (utils/uartstdio.h)(0x5660D159)
 I (driverlib/fpu.h)(0x5660B9DE)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DBD438)
 I (adafruit/Adafruit_Sensor.h)(0x56635868)
+F (.\Sensor_L3GD20H.cpp)(0x5664A3DF)(--cpp -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\sensor_l3gd20h.o --omf_browse .\objects\sensor_l3gd20h.crf --depend .\objects\sensor_l3gd20h.d)
+I (Sensor_L3GD20H.h)(0x5664A22B)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55DBD43E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)
+I (inc/tm4c123gh6pm.h)(0x5660B9E0)
+I (sensorlib/i2cm_drv.h)(0x56620A65)
+I (sensorlib/l3gd20h.h)(0x5660B9E0)
+I (sensorlib/hw_l3gd20h.h)(0x5660B9E0)
+I (adafruit/Adafruit_Sensor.h)(0x56635868)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DBD436)
+I (delays.h)(0x5660B9DE)
+I (inc/hw_i2c.h)(0x5660B9DF)
+I (inc/hw_types.h)(0x5660B9DF)
+I (driverlib/gpio.h)(0x5660B9DE)
+I (driverlib/i2c.h)(0x5660B9DE)
+I (driverlib/pin_map.h)(0x5660B9DE)
+I (driverlib/sysctl.h)(0x5660B9DF)
+I (driverlib/uart.h)(0x5660B9DF)
+I (inc/hw_memmap.h)(0x5660B9DF)
+I (utils/uartstdio.h)(0x5660D159)
+I (driverlib/fpu.h)(0x5660B9DE)
 F (RTE\Device\TM4C123GH6PM\startup_TM4C123.s)(0x56636E3C)(--cpu Cortex-M4.fp -g --apcs=interwork -I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123--pd "__UVISION_VERSION SETA 517" --pd "_RTE_ SETA 1" --pd "TM4C123GH6PM SETA 1"--list .\listings\startup_tm4c123.lst --xref -o .\objects\startup_tm4c123.o --depend .\objects\startup_tm4c123.d)
 F (RTE\Device\TM4C123GH6PM\system_TM4C123.c)(0x5660B9DE)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -I.-I C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\RTE-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include-I C:\Keil_v5\ARM\PACK\CU_SYSC4906\LabF14_DFP\1.0.7\Device\CU\Include\TM4C123-I C:\Keil_v5\ARM\PACK\Keil\TM4C_DFP\1.0.0\Device\Include\TM4C123-D__UVISION_VERSION="517" -D_RTE_ -DTM4C123GH6PM -DTARGET_IS_TM4C123_RB1 -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\system_tm4c123.o --omf_browse .\objects\system_tm4c123.crf --depend .\objects\system_tm4c123.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DBD440)

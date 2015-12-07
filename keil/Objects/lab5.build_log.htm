@@ -22,15 +22,27 @@ Dialog DLL:      TCM.DLL V1.14.6.0
  
 <h2>Project:</h2>
 C:\Users\dpolan\Documents\TivaC-Stabalizer\keil\lab5.uvprojx
-Project File Date:  12/03/2015
+Project File Date:  12/06/2015
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
 compiling main.cpp...
+main.cpp(148): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		float g0 = gyro->lastRead_gyro[0] - 
+YRO_STAT_G0; //x1 axis
+main.cpp(142): warning:  #177-D: variable "z" was declared but never referenced
+  		float z = accel->lastRead_accel[2];
+main.cpp(148): warning:  #177-D: variable "g0" was declared but never referenced
+  		float g0 = gyro->lastRead_gyro[0] - GYRO_STAT_G0; //x1 axis
+main.cpp(149): warning:  #177-D: variable "g1" was declared but never referenced
+  		float g1 = gyro->lastRead_gyro[1] - GYRO_STAT_G1; //x2 axis
+main.cpp(187): warning:  #111-D: statement is unreachable
+  	return 0;
+main.cpp: 5 warnings, 0 errors
 linking...
-Program Size: Code=16088 RO-data=2740 RW-data=1644 ZI-data=4836  
-".\Objects\lab5.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=17120 RO-data=2784 RW-data=1644 ZI-data=4836  
+".\Objects\lab5.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -57,9 +69,9 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:4.3.0
 
    * Component: Keil::Device:Startup:1.0.0
+      Include file:  Device\Include\TM4C123\TM4C123.h
       Source file:   Device\Source\ARM\startup_TM4C123.s
       Source file:   Device\Source\system_TM4C123.c
-      Include file:  Device\Include\TM4C123\TM4C123.h
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

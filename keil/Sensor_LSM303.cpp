@@ -22,10 +22,9 @@ Sensor_LSM303_Accel::Sensor_LSM303_Accel( tI2CMInstance* masterD ) {
 
 void Sensor_LSM303_Accel::init(void) {
 	UARTprintf("Init Accel\n");
-	int success = 0;
 	//initialize the accelerometer
 	_defaultDone = false;
-	success = LSM303DInit(&_accelerometer, _masterDriver, 0x19, defaultCallback_accel, this); //0x19 is the default I2C address of the LSM303DLHC device
+	LSM303DInit(&_accelerometer, _masterDriver, 0x19, defaultCallback_accel, this); //0x19 is the default I2C address of the LSM303DLHC device
 	while(!_defaultDone) {}
 	
 		

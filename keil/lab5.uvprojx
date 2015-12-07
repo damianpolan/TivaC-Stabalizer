@@ -1017,6 +1017,11 @@
               <FileType>8</FileType>
               <FilePath>.\Sensor_LSM303.cpp</FilePath>
             </File>
+            <File>
+              <FileName>Sensor_L3GD20H.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Sensor_L3GD20H.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
